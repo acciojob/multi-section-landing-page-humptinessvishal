@@ -8,6 +8,21 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form id="contactForm">
+		<label for="fullName">Full Name *<span class="error" id="errorFullName"></span></label>
+	    <input type="text" id="fullName" name="fullName" required>
+
+	    <label for="email">Email Address *<span class="error" id="errorEmail"></span></label>
+	    <input type="email" id="email" name="email" required>
+
+	    <label for="phone">Phone Number <span class="error" id="errorPhone"></span></label>
+	    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+	    <label for="message">Message (Minimum 100 characters) *<span class="error" id="errorMessage"></span></label>
+	    <textarea id="message" name="message" rows="4" required></textarea>
+
+	    <button type="button" onclick="validateForm()">Submit</button>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
